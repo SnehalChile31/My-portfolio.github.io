@@ -1,0 +1,380 @@
+ /* =========== GOOGLE FONT =========== */
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+/* body{
+  min-height: 1000px;
+} */
+
+
+ /* =========== HOME SECTION CSS =========== */
+.home{
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #252939;
+  background-size: cover;
+}
+.home .content{
+  max-width: 900px;  
+  text-align: center;
+}
+.home h1{
+  font-size: 3rem;
+  color: #fff;
+  margin: 10px;
+}
+.btn{
+  font-size: 1rem;
+  color: #fff;
+  background-color: rgb(37, 210, 230);
+  display: inline-block;
+  padding: 10px 30px;
+  margin-top:20px ;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+}
+.btn:hover{
+  letter-spacing: 6px;
+}
+
+
+ /* =========== NAVBAR CSS =========== */
+header{
+  position: fixed;
+  top: 0;
+  left: 0px;
+  width: 100%;
+  padding: 40px 100ox;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: 0.5s;
+}
+header.sticky{
+  background-color:rgb(37, 210, 230);
+  padding: 0px 60px;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+}
+header .logo{
+  color: rgb(37, 210, 230);
+  text-decoration: none;
+  font-size: 2.5rem;
+  margin-left: 40px;
+}
+header.sticky .logo{
+  color: #252939;
+  margin-left: 0px;
+}
+header .navigation{
+  position: relative;
+  display: flex; 
+  margin-right: 20px;
+}
+header .navigation li{
+  list-style: none;
+  margin: 25px;
+}
+header .navigation li a{
+  text-decoration: none;
+  color: #fff;
+  font-weight: 300;
+  font-size: 20px;
+}
+header.sticky .navigation li a{
+  color: #252939;
+}
+header.sticky .navigation li a:hover{
+  color: #e31b6d;
+}
+.menuIcon, .closeIcon{
+  display: none;
+}
+
+ /* =========== ABOUT SECTION CSS =========== */
+section{
+  padding: 100px;
+}
+.about{
+  background: #fafafa;
+}
+.row{
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.row .col50{
+  position: relative;
+  width: 48%;
+}
+.titleText{
+  color: rgb(37, 210, 230);
+  font-size: 3rem;
+  font-weight: 300;
+  text-align: center;
+  margin-bottom: 40px;
+}
+.titleText span{
+  color: #e31b6d;
+  font-weight: 700;
+  font-size: 3.7rem;
+}
+.min-title{
+  margin: 20px 0px;
+  font-size: 1.3rem;
+}
+.row .col50 .skill{
+  position: relative;
+  display: inline-block;
+  border-radius: 10px;
+  padding: 0.3rem 0.4rem;
+  margin-bottom: 1.5rem;
+  margin-right: 1.2rem;
+  font-size: 1.3rem;
+  background: rgba(153,153,153,.2);
+  border-radius: 5px;
+  font-weight: 300;
+  color: #373535;
+}
+.abt-content p{
+  font-size: 1.2rem;
+  line-height: 1.7;
+  margin-bottom: 1rem;
+}
+.title{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+
+ /* =========== PROJECT SECTION CSS =========== */
+.pro-content{
+  width: 100%;
+}
+.pro-box{
+  border: 2px solid #e31b6d;
+  padding: 25px ;
+  margin: 20px 0px;
+}
+.pro-title{
+  font-size: 1.3rem;
+  margin-bottom: 10px;
+}
+.pro-description{
+  font-size: 1.2rem;
+}
+
+ /* =========== CONTACT SECTION CSS =========== */
+.contact{
+  background: #252939;
+}
+.contactForm{
+  background: rgb(246,246,246);
+  padding: 4rem;
+  margin-top: 6rem;
+  max-width: 80rem;
+  width: 70%;
+  border-radius: 5px;
+  margin: 5rem auto 0 auto;
+}
+.contactForm .inputBox{
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+}
+.contactForm .inputBox input, textarea{
+  width: 100%;
+  background: #efefef;
+  border: 1px solid #555;
+  padding: 10px;
+  color: #111;
+  outline: none;
+  font-size: 16px;
+  font-weight: 300;
+}
+.contactForm h3 {
+  font-size: 1.5rem;
+  text-align: left;
+  padding-bottom: 15px;
+  font-weight: 500;
+}
+.contactForm h3 a{
+  color: black;
+}
+
+ /* =========== FOOTER SECTION CSS =========== */
+.copyrightText{
+  padding: 8px 40px;
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.copyrightText p{
+  color: #333;
+}
+.copyrightText a {
+  color: #333;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+
+ /* =========== MEDIA QUERIES =========== */
+@media screen and (max-width:1124px) {
+  header.sticky{ padding: 0px 40px;}
+  section{ padding: 50px;}
+}
+
+
+@media screen and (max-width:991px) {
+  header .navigation{ 
+    display: none;
+  }
+  header .navigation.active{
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(37, 210, 230);
+  }
+  header .navigation li{
+    margin: 12px;
+  }
+  header .navigation li a{
+    color: black;
+    font-size: 1.6rem;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+  header .navigation li a:hover{
+    color: #e31b6d;
+    letter-spacing: 4px;
+  }
+  .menuIcon{
+    display: block;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    margin-right: 30px;
+  } 
+  .menuIcon.active{
+    display: none;
+  }
+  .closeIcon{
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 50px;
+    width: 40px;
+  }
+.home h1{
+  font-size: 2.4rem;
+}
+
+/* about section */
+.row{ 
+  flex-direction: column;
+  text-align: center;
+}
+.row .col50{
+  width: 100%;
+}
+
+
+/* project section */
+.pro-title{
+  font-size: 1.2rem;
+  margin-bottom: 10px;
+}
+.pro-description{
+  font-size: 1.1rem;
+}
+
+/* contact section */
+.contactForm{
+  width: 85%;
+  padding: 2rem;
+  margin: auto;
+}
+.contactForm h3{
+  font-size: 1.2rem;
+}
+
+}
+
+
+@media screen and (max-width:690px) {
+  .home h1{
+    font-size: 2rem;
+  }
+  /* about section  */
+  section{
+    padding: 20px;
+  }
+  .titleText{
+    margin-bottom: 20px;
+    font-size: 2rem;
+  }
+  .titleText span{
+    font-size: 2.7rem;
+  }
+  .min-title {
+    font-size: 1rem;
+    padding-left: 0px;
+}
+.abt-content{
+  font-size: 1rem;
+}
+.row .col50 .skill{
+  margin-right: .3rem;
+}
+/* project section  */
+.pro-title{
+  font-size: 1rem;
+}
+.pro-description{
+  font-size: 1rem;
+}
+
+}
+
+@media screen and (max-width:400px) {
+  .home h1{
+    font-size: 1.8rem;
+  }
+  .menuToggle{
+    margin-right: 10px;
+  }
+  .row .col50 .skill{
+    font-size: 1.1rem;
+  }
+  .contactForm{
+    width: 100%;
+  }
+}
+
+
+
+
+
+
+

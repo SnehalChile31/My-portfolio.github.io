@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title> Snehal Chile </title>
+</head>
+<body>
+    <!-- =========== NAVBAR =========== -->
+    <header>
+        <a href="#" class="logo">Snehal</a>
+        <ul class="navigation" class="menuToggle">
+            <li><a href="#home" onclick="toggleMenu()">Home</a></li>
+            <li><a href="#about" onclick="toggleMenu()">About Me</a></li>
+            <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+            <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+            <li><a href="./files/Snehal Suresh Chile.pd" target="_blank" onclick="toggleMenu()">Resume</a></li>
+            
+            <li><a href="#"> <img class="closeIcon" onclick="toggleMenu()" src="img/close-icon.svg" alt=""></a></li>
+
+        </ul>
+        <img class="menuIcon" onclick="toggleMenu()" src="img/menu-icon.svg" alt="">
+
+    </header>
+
+    <!-- =========== HOME =========== -->
+    <section class="home" id="home">
+        <div class="content">
+            <h1> Hi there, My name is Snehal Chile. </h1>
+            <h1> I am a Full-Stack Web Developer. </h1>
+            <a href="#contact" class="btn"> Hire me </a>
+        </div>
+    </section>
+
+    <!-- =========== ABOUT ME =========== -->
+    <section class="about" id="about">
+        <h2 class="titleText"><span>A</span>bout Me</h2>
+        <div class="row">
+            <div class="col50">
+                <div class="min-title">
+                    <h2> Get to know Me !</h2>
+                </div>
+                <div class="abt-content">
+
+                    <p> I am creative web developer who deeply cares about user experience. I have always had sense of motivation and passion driving me forward. I love to explore new technologies, learning new skills and meeting people I enjoy creating things that are live on internet </p>
+
+                    <p>I'm open to Job opportunities where I can work in an environment that will help me learn and grow. If you have a opportunity that matches my skills and experience then you can connect with me.</p>
+
+                    <a href="#contact" class="btn"> Contact Me </a>
+                 </div>
+            </div>
+            <div class="col50">
+                <div class="min-title">
+                    <h2> My Skills </h2>
+                </div>
+                <div class="skill-section">
+                    <div class="skill">HTML</div>
+                    <div class="skill">CSS</div>
+                    <div class="skill">JavaScript</div>
+                    <div class="skill">React</div>
+                    <div class="skill">Bootstrap</div>
+                    <div class="skill">NodeJS</div>
+                    <div class="skill">MongoDB</div>
+                    <div class="skill">Express</div>
+                    <div class="skill">Git</div>
+                    <div class="skill">Github</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== PROJECTS =========== -->
+    <section class="projects" id="projects">
+        <div class="title">
+            <h2 class="titleText"><span>P</span>rojects</h2>
+            <div class="pro-content">
+                <div class="pro-box">
+                <div class="pro-title">
+                    <h3>My portfolio Website</h3>
+                </div>
+                <div class="pro-description">
+                    <p>A highly interactive single page portfolio website built using HTML, CSS, JAVASCRIPT.  </p>
+                </div>
+                </div>
+
+                <div class="pro-box">
+                <div class="pro-title">
+                    <h3>E-commerce Website</h3>
+                </div>
+                <div class="pro-description">
+                    <p>A highly responsive e-commerce website built using MERN stack. In this, react is use to make front-end part of the website. Also, NPM packages are used.</p>
+                </div>
+                </div>
+
+                <div class="pro-box">
+                <div class="pro-title">
+                    <h3> Landing Page </h3>
+                </div>
+                <div class="pro-description">
+                    <p>I created a beautiful landing page for locally based clothing brand.</p>
+                </div>
+                </div>
+
+                <div class="pro-box">
+                <div class="pro-title">
+                    <h3>Web app using api</h3>
+                </div>
+                <div class="pro-description">
+                    <p>Created food recipes app using React JS in this project api is used to get recipes of any food that you want to make. </p>
+                </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- =========== CONTACT =========== -->
+<section class="contact" id="contact">
+    <div class="tilte">
+        <h2 class="titleText"><span>C</span>ontact</h2>
+    </div>
+
+    <div class="contactForm">
+        <h3> 
+            Feel free to send an email on <a href="mailto:snehalsureshchile@gmail.com">snehalsureshchile@gmail.com</a>
+        </h3>
+    
+        <h3> Alternatively, you can also drop your message here! </h3>
+        <div class="inputBox">
+            <label for="name" class="label">Name</label>
+            <input type="text" name="name" id="name" placeholder="Enter Your Name">
+        </div>
+        
+        <div class="inputBox">
+            <label for="email" class="label">E-mail</label>
+            <input type="email" name="email" id="email" placeholder="Enter Your E-mail">
+        </div>
+        
+        <div class="inputBox">
+           <label for="msg" class="label">Message</label>
+           <textarea name="msg" id="msg" cols="54" rows="10" placeholder="Enter your Message "></textarea>
+        </div>
+        <div class="inputBox">
+          <input class="btn" type="submit" value="Send">
+        </div>
+    </div>
+</section>
+
+    <!-- =========== FOOTER =========== -->
+<div class="copyrightText">
+    <p>Copyright <a href="#"> Snehal Chile. </a> All Right Reserved</p>
+</div>
+
+<!-- ========== MAIN JS ========== -->
+    <script src="main.js"></script>
+</body>
+</html>
